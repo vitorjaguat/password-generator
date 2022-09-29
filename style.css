@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #3b3b98; */
+    background-image: url('engrenagem.jpg');
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0;
+}
+
+h2 {
+    margin: 10px 0 20px;
+    text-align: center;
+}
+
+.container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(5px);
+    background: radial-gradient(at 50% 0%, rgba(0,0,0,0), rgba(255,255,255, 0.3));
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+}
+
+.result-container {
+    background-color: #dddddd;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    color:black;
+}
+
+.result-container #result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+}
+
+.result-container .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.container .btn-message {
+    background-color: #424242;
+    border-radius: 5px;
+    width: 140px;
+    color: white;
+    letter-spacing: 1.5px;
+    position: absolute;
+    left: 30%;
+    top: 35.5%;
+    display: none;
+    cursor: none;
+}
+
+.container .btn-message:focus{
+    outline: none;
+}
+
+.btn {
+    border: none;
+    background-color: #3b3b98;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.btn-large {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+}
+
+.btn-large:focus{
+    outline: none;
+}
+
+.btn-large:active {
+    transform: scale(.98);
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+#length{
+    font-size: 16px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+#clipboard{
+    border-radius: 5px;
+    color: white;
+    background-color: #3b3b98;
+    opacity: 0.9;
+    font-size: 1.2rem;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
